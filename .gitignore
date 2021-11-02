@@ -1,0 +1,6 @@
+AdvSemiSeg-paddle/*.pdparams
+AdvSemiSeg-paddle/model/*.pdparams
+AdvSemiSeg-torch/model/*.pth
+AdvSemiSeg-torch/*.pth
+AdvSemiSeg-torch/*.npy
+AdvSemiSeg-paddle/*.npy
