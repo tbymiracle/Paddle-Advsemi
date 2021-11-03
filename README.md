@@ -3,12 +3,14 @@
 ## 1.Introduction
 This project is based on the paddlepaddle_V2.2.0-rc0 framework to reproduce Brain-Tumor-Segmentation. 
 
-We put the torch version in AdvSemiSeg-torch/ (the [official code](https://github.com/hfslyc/AdvSemiSeg)
+We put the torch version in AdvSemiSeg-torch/ (the [official code](https://github.com/hfslyc/AdvSemiSeg))
 
 We put our project in AdvSemiSeg-paddle/. Our project can achieve almost the same results. 
 ## 2.Result
 
 The model is trained on the train set of VOC, and we test it on test set of VOC.
+
+注：我们前向和反向都进行了对齐，按照原文作者repo参数的训练结果，pytorch和paddle都只能达到0.08和0.09。
 
 <!-- Average result in all 240 slices:
 
