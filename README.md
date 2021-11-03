@@ -1,9 +1,9 @@
 # Paddle-Advsemi
 
 ## 1.Introduction
-This project is based on the paddlepaddle_V2.2 framework to reproduce Brain-Tumor-Segmentation. 
+This project is based on the paddlepaddle_V2.2.0-rc0 framework to reproduce Brain-Tumor-Segmentation. 
 
-We put the keras version in AdvSemiSeg-torch/ (the [official code](https://github.com/jadevaibhav/Brain-Tumor-Segmentation-using-Deep-Neural-networks) based on keras is implemented in jupyter notebook so we change it a little). 
+We put the torch version in AdvSemiSeg-torch/ (the [official code](https://github.com/hfslyc/AdvSemiSeg)
 
 We put our project in AdvSemiSeg-paddle/. Our project can achieve almost the same results. 
 ## 2.Result
@@ -58,16 +58,18 @@ We use the [`repord_log`](https://github.com/WenmuZhou/reprod_log) tool to align
 
 
 ```  
-python keras-bts/forward.py # keras forward
-python paddle-bts/forward.py # paddle forward
-python keras-bts/check_diff.py # check diff of forward step.
+cd AdvSemiSeg-paddle
+python bp_align.py # paddle backward
+cd AdvSemiSeg-torch
+python bp_align.py # torch backward
+python AdvSemiSeg-paddle/check_diff.py # check diff of backward step.
 ```  
 
         
 * Network structure transfer.
 * Weight transfer:
-  * model of torch version to do the aligh : 链接: https://pan.baidu.com/s/1rAl0rdQAxnM_RLWPw8c7zg 提取码: jknr 复制这段内容后打开百度网盘手机App，操作更方便哦
-  * model of paddle version transfered from torch: 链接: https://pan.baidu.com/s/1sv-69Uv1tqRpnIuMNN0quQ 提取码: zk5i 复制这段内容后打开百度网盘手机App，操作更方便哦
+  * models of torch version to do the aligh : 链接: https://pan.baidu.com/s/1rAl0rdQAxnM_RLWPw8c7zg 提取码: jknr 复制这段内容后打开百度网盘手机App，操作更方便哦
+  * models of paddle version transfered from torch: 链接: https://pan.baidu.com/s/1sv-69Uv1tqRpnIuMNN0quQ 提取码: zk5i 复制这段内容后打开百度网盘手机App，操作更方便哦
 * Verify the network.
 * Forward align
   * AdvSemiSeg-paddle/
