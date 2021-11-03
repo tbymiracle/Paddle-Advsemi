@@ -10,21 +10,18 @@ We put our project in AdvSemiSeg-paddle/. Our project can achieve almost the sam
 
 The model is trained on the train set of VOC, and we test it on test set of VOC.
 
-注：我们前向和反向都进行了对齐，按照原文作者repo参数的训练结果，跑原版pytorch达不到验收精度，只能达到0.08，我们在paddle框架下同样参数的训练结果是0.09。
+注：我们前向和反向都已对齐。但我们按照原文作者repo参数的训练原版pytorch，结果只能达到0.08，我们在paddle框架下同样参数的训练结果是0.09，训练好的模型文件如下。
+
+model we trained of paddle version 链接: https://pan.baidu.com/s/1cQDGJOo6yb-TRt-4yUMroQ 提取码: cvft 复制这段内容后打开百度网盘手机App，操作更方便哦
+
+model we trained as author did of torch version 链接：https://pan.baidu.com/s/1eVH0blc6MkmbyGKmXiGblQ  提取码：26zw
 
 <!-- Average result in all 240 slices:
 
  Version | Dice Complete | Dice Core | Dice Enhancing
  ---- | ----- | -----  | -----
  keras version(official)  | 0.907  | 0.961 | 1.0
- paddle version(ours) | 0.907|  0.961 | 1.0
- 
- Result in slice 113:
- 
-  Version | Dice Complete | Dice Core | Dice Enhancing
- ---- | ----- | -----  | -----
- keras version(official)  | 0.828  | 0.935 | 1.0
- paddle version(ours) | 0.828|  0.935 | 1.0 -->
+ paddle version(ours) | 0.907|  0.961 | 1.0 -->
  
 
 
