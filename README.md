@@ -73,6 +73,9 @@ python AdvSemiSeg-paddle/check_diff.py # check diff (change the file name in the
 * Verify the network.
 * Forward align
   * AdvSemiSeg-paddle/align/diff_txt
+ <img src=" https://github.com/tbymiracle/Paddle-Advsemi/blob/master/AdvSemiSeg-paddle/align/FORWARD.png"/>
+  <img src=" https://github.com/tbymiracle/Paddle-Advsemi/blob/master/AdvSemiSeg-paddle/align/FORWARD_D.png"/>
 * Backward align
   * AdvSemiSeg-paddle/align/bp_diff.txt
+ <img src=" https://github.com/tbymiracle/Paddle-Advsemi/blob/master/AdvSemiSeg-paddle/align/IMAGE.png" width="600"/>
 * Train align
