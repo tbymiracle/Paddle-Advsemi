@@ -449,6 +449,13 @@ if __name__ == '__main__':
     # print(output)
 
     # forward
+    output = model(input)
+    outputD = model_D(output)
+    reprod_logger.add("forward", output.numpy())
+    reprod_logger.save("forward_paddle.npy")
+    
+    reprod_logger.add("forward_D", outputD.numpy())
+    reprod_logger.save("forward_D_paddle.npy")
 
 
     # optimizer and lr
