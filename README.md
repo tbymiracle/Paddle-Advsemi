@@ -38,6 +38,7 @@ The model is trained on the train set of VOC, and we test it on test set of VOC.
 
 ``` 
 git clone https://github.com/tbymiracle/Paddle-Advsemi.git
+cd Paddle-Advsemi
 cd AdvSemiSeg-paddle
 ``` 
 
