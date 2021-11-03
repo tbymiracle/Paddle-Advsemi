@@ -14,7 +14,7 @@ The model is trained on the train set of VOC, and we test it on test set of VOC.
 
 model we trained of paddle version 链接: https://pan.baidu.com/s/1cQDGJOo6yb-TRt-4yUMroQ 提取码: cvft 复制这段内容后打开百度网盘手机App，操作更方便哦
 
-model we trained as author did of torch version 链接：https://pan.baidu.com/s/1eVH0blc6MkmbyGKmXiGblQ  提取码：26zw
+model we trained of torch version 链接：https://pan.baidu.com/s/1wlgVTNwIv4Gv52me0UtfEg  提取码：1fdb
 
 <!-- Average result in all 240 slices:
 
