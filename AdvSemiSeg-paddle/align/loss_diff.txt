@@ -1,9 +1,0 @@
-[2021/11/02 14:03:28] root INFO: pred: 
-[2021/11/02 14:03:28] root INFO: 	mean diff: check passed: False, value: 1.9411686480452772e-06
-[2021/11/02 14:03:28] root INFO: loss_seg: 
-[2021/11/02 14:03:28] root INFO: 	mean diff: check passed: False, value: 1.8153514247387648e-09
-[2021/11/02 14:03:28] root INFO: D_out: 
-[2021/11/02 14:03:28] root INFO: 	mean diff: check passed: False, value: 0.004814614541828632
-[2021/11/02 14:03:28] root INFO: loss: 
-[2021/11/02 14:03:28] root INFO: 	mean diff: check passed: False, value: 0.0023292899131774902
-[2021/11/02 14:03:28] root INFO: diff check failed
