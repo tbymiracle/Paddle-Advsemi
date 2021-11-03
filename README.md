@@ -59,10 +59,10 @@ We use the [`repord_log`](https://github.com/WenmuZhou/reprod_log) tool to align
 
 ```  
 cd AdvSemiSeg-paddle
-python bp_align.py # paddle backward
+python bp_align.py # paddle forward and backward
 cd AdvSemiSeg-torch
-python bp_align.py # torch backward
-python AdvSemiSeg-paddle/check_diff.py # check diff of backward step.
+python bp_align.py # torch forward backward
+python AdvSemiSeg-paddle/check_diff.py # check diff (change the file name in the python file to check different step of diff)
 ```  
 
         
@@ -72,7 +72,7 @@ python AdvSemiSeg-paddle/check_diff.py # check diff of backward step.
   * put models of paddle version transfered from torch in the AdvSemiSeg-paddle/model: 链接: https://pan.baidu.com/s/1sv-69Uv1tqRpnIuMNN0quQ 提取码: zk5i 复制这段内容后打开百度网盘手机App，操作更方便哦
 * Verify the network.
 * Forward align
-  * AdvSemiSeg-paddle/
+  * AdvSemiSeg-paddle/align/diff_txt
 * Backward align
-  * AdvSemiSeg-paddle/
+  * AdvSemiSeg-paddle/align/bp_diff.txt
 * Train align
