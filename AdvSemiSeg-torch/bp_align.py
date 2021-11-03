@@ -503,7 +503,14 @@ if __name__ == '__main__':
     model_D.eval()
     # print(output)
     
-    # forward
+    # forward    
+    output = model(input)
+    outputD = model_D(output)
+    reprod_logger.add("forward", output.cpu().detach().numpy())
+    reprod_logger.save("forward_torch.npy")
+    
+    reprod_logger.add("forward_D", outputD.cpu().detach().numpy())
+    reprod_logger.save("forward_D_torch.npy")
 
 
     
