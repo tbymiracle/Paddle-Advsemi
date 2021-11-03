@@ -10,7 +10,7 @@ We put our project in AdvSemiSeg-paddle/. Our project can achieve almost the sam
 
 The model is trained on the train set of VOC, and we test it on test set of VOC.
 
-注：我们前向和反向都进行了对齐，按照原文作者repo参数的训练结果，pytorch和paddle都只能达到0.08和0.09。
+注：我们前向和反向都进行了对齐，按照原文作者repo参数的训练结果，跑原版pytorch达不到验收精度，只能达到0.08，我们在paddle框架下同样参数的训练结果是0.09。
 
 <!-- Average result in all 240 slices:
 
