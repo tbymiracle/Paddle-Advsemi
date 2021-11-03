@@ -68,8 +68,8 @@ python AdvSemiSeg-paddle/check_diff.py # check diff of backward step.
         
 * Network structure transfer.
 * Weight transfer:
-  * models of torch version to do the aligh : 链接: https://pan.baidu.com/s/1rAl0rdQAxnM_RLWPw8c7zg 提取码: jknr 复制这段内容后打开百度网盘手机App，操作更方便哦
-  * models of paddle version transfered from torch: 链接: https://pan.baidu.com/s/1sv-69Uv1tqRpnIuMNN0quQ 提取码: zk5i 复制这段内容后打开百度网盘手机App，操作更方便哦
+  * put models of torch version to do the aligh in the AdvSemiSeg-torch/model: 链接: https://pan.baidu.com/s/1rAl0rdQAxnM_RLWPw8c7zg 提取码: jknr 复制这段内容后打开百度网盘手机App，操作更方便哦
+  * put models of paddle version transfered from torch in the AdvSemiSeg-paddle/model: 链接: https://pan.baidu.com/s/1sv-69Uv1tqRpnIuMNN0quQ 提取码: zk5i 复制这段内容后打开百度网盘手机App，操作更方便哦
 * Verify the network.
 * Forward align
   * AdvSemiSeg-paddle/
