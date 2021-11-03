@@ -352,7 +352,7 @@ def main():
                 pred = interp(model(images))
                 pred_remain = pred.detach()
 
-                D_out = interp(model_D(F.softmax(pred,axis=1)))
+                D_out = interp(model_D(F.softmax(pred)))
                 D_out_sigmoid = F.sigmoid(D_out).data.cpu().numpy().squeeze(axis=1)
 
                 ignore_mask_remain = np.zeros(D_out_sigmoid.shape).astype(np.bool)
@@ -406,7 +406,7 @@ def main():
 
             loss_seg = loss_calc(pred, labels, args.gpu)
 
-            D_out = interp(model_D(F.softmax(pred,axis=1)))
+            D_out = interp(model_D(F.softmax(pred)))
 
             loss_adv_pred = bce_loss(D_out, make_D_label(gt_label, ignore_mask))
 
@@ -432,7 +432,7 @@ def main():
                 pred = torch.cat((pred, pred_remain), 0)
                 ignore_mask = np.concatenate((ignore_mask,ignore_mask_remain), axis = 0)
 
-            D_out = interp(model_D(F.softmax(pred,axis=1)))
+            D_out = interp(model_D(F.softmax(pred)))
             loss_D = bce_loss(D_out, make_D_label(pred_label, ignore_mask))
             loss_D = loss_D/args.iter_size/2
             loss_D.backward()
